@@ -1,8 +1,4 @@
 #!/bin/bash
-cp .bashrc ~/.bashrc
-cp .zshrc ~/.zshrc
-cp .p10k.zsh ~/.p10k.zsh
-
 sudo apt update
 sudo apt install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -14,3 +10,7 @@ sudo curl "https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.loc
 sudo curl "https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold.ttf" -o "/usr/local/share/fonts/MesloLGS NF Bold"
 sudo curl "https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Italic.ttf" -o "/usr/local/share/fonts/MesloLGS NF Italic"
 sudo curl "https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf" -o "/usr/local/share/fonts/MesloLGS NF Regular"
+
+cp .bashrc ~/.bashrc
+cp .zshrc ~/.zshrc
+cp .p10k.zsh ~/.p10k.zsh
