@@ -8,7 +8,7 @@ if [[ $(fastfetch --host-format {1} | grep -e "Host: WSL") ]]; then
         echo 'regex="/mnt/c/Users/[^/]*/?$";' >>~/.bashrc
         echo '' >>~/.bashrc
         echo 'if [[ $(pwd) =~ $regex ]];then' >>~/.bashrc
-        echo 'echo "sui"' >>~/.bashrc
+        echo 'cd' >>~/.bashrc
         echo 'fi' >>~/.bashrc
     fi
 fi
